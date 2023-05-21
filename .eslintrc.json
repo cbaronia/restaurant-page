@@ -9,5 +9,8 @@
   "parserOptions": {
     "ecmaVersion": "latest"
   },
-  "rules": {}
+  "rules": {},
+  "eslint.options": {
+    "ignorePattern": "webpack.config.js"
+  }
 }

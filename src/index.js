@@ -1,19 +1,27 @@
 import "./style.css";
-import Sky from "./sky.png";
+import createHeader from "./header";
+import createFooter from "./footer";
+import createHomeContent from "./home";
 
-function component() {
-  const element = document.createElement("div");
+let contentDiv = document.querySelector("#content");
 
-  element.innerHTML = "Hello, World!";
-  element.classList.add("test");
-
-  // Add the image to our existing div.
-  const theSky = new Image();
-  theSky.src = Sky;
-
-  element.appendChild(theSky);
-
-  return element;
+function initialPageLayout() {
+  // Header
+  document.body.insertBefore(createHeader(), document.body.firstChild);
+  // Content
+  // Footer
+  document.body.appendChild(createFooter());
 }
 
-document.body.appendChild(component());
+function loadContent(content) {
+  // Clear current page content
+  while (contentDiv.firstChild) {
+    contentDiv.removeChild(contentDiv.firstChild);
+  }
+  // Append updated page content
+  contentDiv.appendChild(content);
+}
+
+// First Page Load
+initialPageLayout();
+loadContent(createHomeContent());

@@ -2,6 +2,8 @@ import "./style.css";
 import createHeader from "./header";
 import createFooter from "./footer";
 import createHomeContent from "./home";
+import createMenuContent from "./menu";
+import createContactContent from "./contact";
 
 let contentDiv = document.querySelector("#content");
 
@@ -24,4 +26,4 @@ function loadContent(content) {
 
 // First Page Load
 initialPageLayout();
-loadContent(createHomeContent());
+loadContent(createContactContent());

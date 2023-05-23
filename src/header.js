@@ -5,6 +5,10 @@ function createHeader() {
   let menuTab = document.createElement("li");
   let contactTab = document.createElement("li");
 
+  homeTab.classList.add("homeTab");
+  menuTab.classList.add("menuTab");
+  contactTab.classList.add("contactTab");
+
   homeTab.textContent = "Home";
   menuTab.textContent = "Menu";
   contactTab.textContent = "Contact";

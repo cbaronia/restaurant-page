@@ -26,4 +26,20 @@ function loadContent(content) {
 
 // First Page Load
 initialPageLayout();
-loadContent(createContactContent());
+loadContent(createHomeContent());
+
+// When tab for page is clicked, switch to page
+let homeTab = document.querySelector(".homeTab");
+homeTab.addEventListener("click", (e) => {
+  loadContent(createHomeContent());
+});
+
+let menuTab = document.querySelector(".menuTab");
+menuTab.addEventListener("click", (e) => {
+  loadContent(createMenuContent());
+});
+
+let contactTab = document.querySelector(".contactTab");
+contactTab.addEventListener("click", (e) => {
+  loadContent(createContactContent());
+});

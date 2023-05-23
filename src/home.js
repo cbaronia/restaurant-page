@@ -1,4 +1,4 @@
-import Sky from "./sky.png";
+import Cafe from "./cafe.jpeg";
 
 function createHomeContent() {
   const contentContainer = document.createElement("div");
@@ -7,16 +7,20 @@ function createHomeContent() {
   const resName = document.createElement("h1");
   resName.textContent = "Restaurant Name";
 
-  const resDesc = document.createElement("p");
-  resDesc.textContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+  resName.classList.add("title");
+
+  const resQuote = document.createElement("p");
+  resQuote.textContent =
+    '"Even bad coffee is better than no coffee at all." - David Lynch';
 
   // Add the image to our existing div.
   const resImg = new Image();
-  resImg.src = Sky;
+  resImg.src = Cafe;
+
+  resImg.classList.add("homeImg");
 
   contentContainer.appendChild(resName);
-  contentContainer.appendChild(resDesc);
+  contentContainer.appendChild(resQuote);
   contentContainer.appendChild(resImg);
 
   return contentContainer;

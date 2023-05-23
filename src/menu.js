@@ -5,6 +5,8 @@ function createMenuContent() {
   let menuTitle = document.createElement("h1");
   menuTitle.textContent = "Menu";
 
+  menuTitle.classList.add("title");
+
   let menuList = document.createElement("ul");
   let coffeeItem = document.createElement("li");
   let teaItem = document.createElement("li");
@@ -15,6 +17,12 @@ function createMenuContent() {
   teaItem.textContent = "Tea";
   milkItem.textContent = "Milk";
   waterItem.textContent = "Water";
+
+  menuList.classList.add("menuList");
+  coffeeItem.classList.add("menuItem");
+  teaItem.classList.add("menuItem");
+  milkItem.classList.add("menuItem");
+  waterItem.classList.add("menuItem");
 
   menuList.appendChild(coffeeItem);
   menuList.appendChild(teaItem);

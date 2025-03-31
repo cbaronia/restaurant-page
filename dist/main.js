@@ -100,15 +100,33 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _ruben_ramirez_xhKG01FN2uk_unsplash_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ruben-ramirez-xhKG01FN2uk-unsplash.jpg */ \"./src/ruben-ramirez-xhKG01FN2uk-unsplash.jpg\");\n\n\nconst homePage = (function () {\n    \n    const _createHomeTitle = () => {\n        // Create Element\n        const cafeTitle = document.createElement(\"h1\");\n\n        // Modify Element\n        cafeTitle.textContent = \"Cafe Name\";\n        cafeTitle.classList.add(\"tab-title\");\n\n        // Return Element\n        return cafeTitle;\n    };\n\n    const _createCafeImg = () => {\n        // Create Element\n        const cafe_IMG = document.createElement(\"img\");\n\n        // Modify Element\n        cafe_IMG.src = _ruben_ramirez_xhKG01FN2uk_unsplash_jpg__WEBPACK_IMPORTED_MODULE_0__;\n        cafe_IMG.alt = \"Image of Cafe\";\n        cafe_IMG.classList.add(\"cafe-img\");\n\n        // Return Element\n        return cafe_IMG;\n    };\n\n    const _createHours = () => {\n        // Create Element(s)\n        const hours_DIV = document.createElement(\"div\");\n        const hours_H2 = document.createElement(\"h2\");\n        const hours_UL = document.createElement(\"ul\");\n        const hours_LI1 = document.createElement(\"li\");\n        const hours_LI2 = document.createElement(\"li\");\n        const hours_LI3 = document.createElement(\"li\");\n\n        // Modify Element(s)\n        hours_DIV.classList.add(\"hours\");\n        hours_H2.textContent = \"Hours\";\n        hours_LI1.textContent = \"Mon-Thur: 7am - 4pm\";\n        hours_LI2.textContent = \"Sat: 7am - 3pm\";\n        hours_LI3.textContent = \"Sun: Closed\";\n\n        // Append Elements \n        hours_UL.appendChild(hours_LI1);\n        hours_UL.appendChild(hours_LI2);\n        hours_UL.appendChild(hours_LI3);\n\n        hours_DIV.appendChild(hours_H2);\n        hours_DIV.appendChild(hours_UL);\n\n        // Return Element\n        return hours_DIV;\n    };\n\n    const _createLocation = () => {\n        // Create Element(s)\n        const location_DIV = document.createElement(\"div\");\n        const location_H2 = document.createElement(\"h2\");\n        const location_P = document.createElement(\"p\");\n\n        // Modify Element(s)\n        location_DIV.classList.add(\"location\");\n        location_H2.textContent = \"Location\";\n        location_P.textContent = \"350 Express Drive, North Pacific City, Washington\";\n\n        // Append Element(s)\n        location_DIV.appendChild(location_H2);\n        location_DIV.appendChild(location_P);\n\n        // Return Element\n        return location_DIV;\n    };\n\n    const createHomePage = () => {\n\n        // Get the 'content' container\n        const contentContainer = document.getElementById(\"content\");\n\n        // Create the elements\n        const myHomeTitle = _createHomeTitle();\n        const myCafeImg = _createCafeImg();\n        const myHours = _createHours();\n        const myLocation = _createLocation();\n\n        // Append the elements\n        contentContainer.appendChild(myHomeTitle);\n        contentContainer.appendChild(myCafeImg);\n        contentContainer.appendChild(myHours);\n        contentContainer.appendChild(myLocation);\n\n    };\n\n    return {createHomePage};\n\n})();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homePage);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaG9tZS5qcyIsIm1hcHBpbmdzIjoiOzs7OztBQUFtRTs7QUFFbkU7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBLHVCQUF1QixvRUFBVztBQUNsQztBQUNBOztBQUVBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7O0FBRUE7O0FBRUE7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7O0FBRUEsWUFBWTs7QUFFWixDQUFDOztBQUVELGlFQUFlLFFBQVEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvaG9tZS5qcz83YjQxIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBjYWZlUGljdHVyZSBmcm9tIFwiLi9ydWJlbi1yYW1pcmV6LXhoS0cwMUZOMnVrLXVuc3BsYXNoLmpwZ1wiO1xuXG5jb25zdCBob21lUGFnZSA9IChmdW5jdGlvbiAoKSB7XG4gICAgXG4gICAgY29uc3QgX2NyZWF0ZUhvbWVUaXRsZSA9ICgpID0+IHtcbiAgICAgICAgLy8gQ3JlYXRlIEVsZW1lbnRcbiAgICAgICAgY29uc3QgY2FmZVRpdGxlID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImgxXCIpO1xuXG4gICAgICAgIC8vIE1vZGlmeSBFbGVtZW50XG4gICAgICAgIGNhZmVUaXRsZS50ZXh0Q29udGVudCA9IFwiQ2FmZSBOYW1lXCI7XG4gICAgICAgIGNhZmVUaXRsZS5jbGFzc0xpc3QuYWRkKFwidGFiLXRpdGxlXCIpO1xuXG4gICAgICAgIC8vIFJldHVybiBFbGVtZW50XG4gICAgICAgIHJldHVybiBjYWZlVGl0bGU7XG4gICAgfTtcblxuICAgIGNvbnN0IF9jcmVhdGVDYWZlSW1nID0gKCkgPT4ge1xuICAgICAgICAvLyBDcmVhdGUgRWxlbWVudFxuICAgICAgICBjb25zdCBjYWZlX0lNRyA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJpbWdcIik7XG5cbiAgICAgICAgLy8gTW9kaWZ5IEVsZW1lbnRcbiAgICAgICAgY2FmZV9JTUcuc3JjID0gY2FmZVBpY3R1cmU7XG4gICAgICAgIGNhZmVfSU1HLmFsdCA9IFwiSW1hZ2Ugb2YgQ2FmZVwiO1xuICAgICAgICBjYWZlX0lNRy5jbGFzc0xpc3QuYWRkKFwiY2FmZS1pbWdcIik7XG5cbiAgICAgICAgLy8gUmV0dXJuIEVsZW1lbnRcbiAgICAgICAgcmV0dXJuIGNhZmVfSU1HO1xuICAgIH07XG5cbiAgICBjb25zdCBfY3JlYXRlSG91cnMgPSAoKSA9PiB7XG4gICAgICAgIC8vIENyZWF0ZSBFbGVtZW50KHMpXG4gICAgICAgIGNvbnN0IGhvdXJzX0RJViA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG4gICAgICAgIGNvbnN0IGhvdXJzX0gyID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImgyXCIpO1xuICAgICAgICBjb25zdCBob3Vyc19VTCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJ1bFwiKTtcbiAgICAgICAgY29uc3QgaG91cnNfTEkxID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImxpXCIpO1xuICAgICAgICBjb25zdCBob3Vyc19MSTIgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwibGlcIik7XG4gICAgICAgIGNvbnN0IGhvdXJzX0xJMyA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJsaVwiKTtcblxuICAgICAgICAvLyBNb2RpZnkgRWxlbWVudChzKVxuICAgICAgICBob3Vyc19ESVYuY2xhc3NMaXN0LmFkZChcImhvdXJzXCIpO1xuICAgICAgICBob3Vyc19IMi50ZXh0Q29udGVudCA9IFwiSG91cnNcIjtcbiAgICAgICAgaG91cnNfTEkxLnRleHRDb250ZW50ID0gXCJNb24tVGh1cjogN2FtIC0gNHBtXCI7XG4gICAgICAgIGhvdXJzX0xJMi50ZXh0Q29udGVudCA9IFwiU2F0OiA3YW0gLSAzcG1cIjtcbiAgICAgICAgaG91cnNfTEkzLnRleHRDb250ZW50ID0gXCJTdW46IENsb3NlZFwiO1xuXG4gICAgICAgIC8vIEFwcGVuZCBFbGVtZW50cyBcbiAgICAgICAgaG91cnNfVUwuYXBwZW5kQ2hpbGQoaG91cnNfTEkxKTtcbiAgICAgICAgaG91cnNfVUwuYXBwZW5kQ2hpbGQoaG91cnNfTEkyKTtcbiAgICAgICAgaG91cnNfVUwuYXBwZW5kQ2hpbGQoaG91cnNfTEkzKTtcblxuICAgICAgICBob3Vyc19ESVYuYXBwZW5kQ2hpbGQoaG91cnNfSDIpO1xuICAgICAgICBob3Vyc19ESVYuYXBwZW5kQ2hpbGQoaG91cnNfVUwpO1xuXG4gICAgICAgIC8vIFJldHVybiBFbGVtZW50XG4gICAgICAgIHJldHVybiBob3Vyc19ESVY7XG4gICAgfTtcblxuICAgIGNvbnN0IF9jcmVhdGVMb2NhdGlvbiA9ICgpID0+IHtcbiAgICAgICAgLy8gQ3JlYXRlIEVsZW1lbnQocylcbiAgICAgICAgY29uc3QgbG9jYXRpb25fRElWID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKTtcbiAgICAgICAgY29uc3QgbG9jYXRpb25fSDIgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwiaDJcIik7XG4gICAgICAgIGNvbnN0IGxvY2F0aW9uX1AgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwicFwiKTtcblxuICAgICAgICAvLyBNb2RpZnkgRWxlbWVudChzKVxuICAgICAgICBsb2NhdGlvbl9ESVYuY2xhc3NMaXN0LmFkZChcImxvY2F0aW9uXCIpO1xuICAgICAgICBsb2NhdGlvbl9IMi50ZXh0Q29udGVudCA9IFwiTG9jYXRpb25cIjtcbiAgICAgICAgbG9jYXRpb25fUC50ZXh0Q29udGVudCA9IFwiMzUwIEV4cHJlc3MgRHJpdmUsIE5vcnRoIFBhY2lmaWMgQ2l0eSwgV2FzaGluZ3RvblwiO1xuXG4gICAgICAgIC8vIEFwcGVuZCBFbGVtZW50KHMpXG4gICAgICAgIGxvY2F0aW9uX0RJVi5hcHBlbmRDaGlsZChsb2NhdGlvbl9IMik7XG4gICAgICAgIGxvY2F0aW9uX0RJVi5hcHBlbmRDaGlsZChsb2NhdGlvbl9QKTtcblxuICAgICAgICAvLyBSZXR1cm4gRWxlbWVudFxuICAgICAgICByZXR1cm4gbG9jYXRpb25fRElWO1xuICAgIH07XG5cbiAgICBjb25zdCBjcmVhdGVIb21lUGFnZSA9ICgpID0+IHtcblxuICAgICAgICAvLyBHZXQgdGhlICdjb250ZW50JyBjb250YWluZXJcbiAgICAgICAgY29uc3QgY29udGVudENvbnRhaW5lciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKFwiY29udGVudFwiKTtcblxuICAgICAgICAvLyBDcmVhdGUgdGhlIGVsZW1lbnRzXG4gICAgICAgIGNvbnN0IG15SG9tZVRpdGxlID0gX2NyZWF0ZUhvbWVUaXRsZSgpO1xuICAgICAgICBjb25zdCBteUNhZmVJbWcgPSBfY3JlYXRlQ2FmZUltZygpO1xuICAgICAgICBjb25zdCBteUhvdXJzID0gX2NyZWF0ZUhvdXJzKCk7XG4gICAgICAgIGNvbnN0IG15TG9jYXRpb24gPSBfY3JlYXRlTG9jYXRpb24oKTtcblxuICAgICAgICAvLyBBcHBlbmQgdGhlIGVsZW1lbnRzXG4gICAgICAgIGNvbnRlbnRDb250YWluZXIuYXBwZW5kQ2hpbGQobXlIb21lVGl0bGUpO1xuICAgICAgICBjb250ZW50Q29udGFpbmVyLmFwcGVuZENoaWxkKG15Q2FmZUltZyk7XG4gICAgICAgIGNvbnRlbnRDb250YWluZXIuYXBwZW5kQ2hpbGQobXlIb3Vycyk7XG4gICAgICAgIGNvbnRlbnRDb250YWluZXIuYXBwZW5kQ2hpbGQobXlMb2NhdGlvbik7XG5cbiAgICB9O1xuXG4gICAgcmV0dXJuIHtjcmVhdGVIb21lUGFnZX07XG5cbn0pKCk7XG5cbmV4cG9ydCBkZWZhdWx0IGhvbWVQYWdlOyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/home.js\n");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ "./src/styles.css");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n\n\n\n_home_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"].createHomePage();//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMiLCJtYXBwaW5ncyI6Ijs7O0FBQXNCO0FBQ1c7O0FBRWpDLGdEQUFRIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2luZGV4LmpzP2I2MzUiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFwiLi9zdHlsZXMuY3NzXCI7XG5pbXBvcnQgaG9tZVBhZ2UgZnJvbSBcIi4vaG9tZS5qc1wiO1xuXG5ob21lUGFnZS5jcmVhdGVIb21lUGFnZSgpOyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/index.js\n");
 
+/***/ }),
+
+/***/ "./src/ruben-ramirez-xhKG01FN2uk-unsplash.jpg":
+/*!****************************************************!*\
+  !*** ./src/ruben-ramirez-xhKG01FN2uk-unsplash.jpg ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "2e516facb3b9e9c4e0c5.jpg";
 
 /***/ }),
 
@@ -173,6 +191,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -187,6 +217,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript && document.currentScript.tagName.toUpperCase() === 'SCRIPT')
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/^blob:/, "").replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

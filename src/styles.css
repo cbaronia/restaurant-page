@@ -1,5 +1,96 @@
+:root {
+    --dark-moss-green: #606C38;
+    --pakistan-green: #283618;
+    --cornsilk: #FEFAE0;
+    --earth-yellow: #DDA15E;
+    --tiger-eye: #BC6C25;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--earth-yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: var(--cornsilk);
+    display: flex;
+    justify-content: center;
+}
+
+header nav {
+    width: 300px;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav button {
+    font-size: 1rem;
+    padding: 16px 24px;
+    background-color: var(--cornsilk);
+}
+
+header nav button:hover {
+    cursor: pointer;
+    color: var(--cornsilk);
+    background-color: var(--earth-yellow);
+}
+
+#content {
+    height: 80%;
+    width: 80%;
+    background-color: var(--cornsilk);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tab-title {
+    width: 30%;
+    text-align: center;
+    font-size: 3rem;
+    border-bottom: 1px var(--tiger-eye) solid;
+}
+
+.cafe-img {
+    height: 420px;
+    width: calc(420px * (16/9));
+}
+
+.hours {
+    height: 12%;
+    width: 20%;
+    padding: 16px;
+}
+
+.hours ul {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--cornsilk);
+    padding: 12px 0;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: center;
 }

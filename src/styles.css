@@ -86,6 +86,28 @@ header nav button:hover {
     align-items: center;
 }
 
+.menu-list {
+    list-style-type: none;
+    height: 70%;
+    width: 75%;
+    display: grid;
+    gap: 48px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu-list li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 4px var(--pakistan-green) solid;
+    border-radius: 16px;
+}
+
+.menu-list li img{
+    height: 120px;
+    width: 120px;
+}
+
 footer {
     width: 100%;
     background-color: var(--cornsilk);

@@ -3,4 +3,4 @@ import homePage from "./home.js";
 import menuPage from "./menu.js";
 
 // homePage.createHomePage();
-menuPage.createMenuPage();
+// menuPage.createMenuPage();

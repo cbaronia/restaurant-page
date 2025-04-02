@@ -108,6 +108,29 @@ header nav button:hover {
     width: 120px;
 }
 
+.contacts {
+    height: 70%;
+    width: 75%;
+    list-style-type: none;
+    border: 4px var(--pakistan-green) solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contacts li {
+    border: 1px black solid;
+    height: 12%;
+    width: 40%;
+    padding: 16px;
+}
+
+.contacts li div {
+    padding-top: 8px;
+    padding-left: 36px;
+}
+
 footer {
     width: 100%;
     background-color: var(--cornsilk);

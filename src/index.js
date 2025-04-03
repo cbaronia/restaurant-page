@@ -15,7 +15,7 @@ const viewController = (function () {
         }
     };
 
-    const _attatchEventListeneers = () => {
+    const _attatchEventListeners = () => {
 
         // Get buttons from nav
         const myHomeBtn = document.getElementById("homeBtn");
@@ -24,24 +24,38 @@ const viewController = (function () {
 
         // Assign relevant event listener to each button
         myHomeBtn.addEventListener("click", () => {
-            console.log("Home");
+            // Clear Page
+            _clearPage();
+            // Draw Home Page
+            homePage.createHomePage();
         });
 
         myMenuBtn.addEventListener("click", () => {
-            console.log("Menu");
+            // Clear Page
+            _clearPage();
+            // Draw Menu Page
+            menuPage.createMenuPage();
         });
 
         myContactBtn.addEventListener("click", () => {
-            console.log("Contact");
+            // Clear Page
+            _clearPage();
+            // Draw Contact Page
+            contactPage.createContactPage();
         });
 
 
     }
 
-    return{_attatchEventListeneers};
+    const initialPageLoad = () => {
+        // Draw Home Page
+        homePage.createHomePage();
+        // Attach event listeners
+        _attatchEventListeners();
+    };
+
+    return{initialPageLoad};
 
 })();
 
-// Load homePage by default
-homePage.createHomePage();
-viewController._attatchEventListeneers();
+viewController.initialPageLoad();

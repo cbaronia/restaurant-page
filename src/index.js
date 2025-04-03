@@ -15,9 +15,33 @@ const viewController = (function () {
         }
     };
 
-    return{};
+    const _attatchEventListeneers = () => {
+
+        // Get buttons from nav
+        const myHomeBtn = document.getElementById("homeBtn");
+        const myMenuBtn = document.getElementById("menuBtn");
+        const myContactBtn = document.getElementById("contactBtn");
+
+        // Assign relevant event listener to each button
+        myHomeBtn.addEventListener("click", () => {
+            console.log("Home");
+        });
+
+        myMenuBtn.addEventListener("click", () => {
+            console.log("Menu");
+        });
+
+        myContactBtn.addEventListener("click", () => {
+            console.log("Contact");
+        });
+
+
+    }
+
+    return{_attatchEventListeneers};
 
 })();
 
 // Load homePage by default
 homePage.createHomePage();
+viewController._attatchEventListeneers();
